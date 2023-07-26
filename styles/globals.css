@@ -1,0 +1,164 @@
+body {
+  width: 70%;
+  margin: auto;
+}
+
+:root {
+  --primary: rgb(3, 121, 255);
+  --secondary: black;
+  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.app {
+  box-shadow: var(--shadow);
+}
+
+.nav-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  padding: 1rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.nav-child {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.signin {
+  font-size: 1rem;
+}
+
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.value {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.value.selected {
+  background-color: darkblue;
+  color: white;
+}
+
+/* .grid-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto; /* Keeps card sizes consistent based on content height */
+  /* gap: 20px; */
+  align-items: start;
+  margin: 1rem;
+}
+
+.toggle {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.detailed-card {
+  width: 70%;
+  height: 93vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.detailed-new-img {
+  width: 100%;
+  height: auto;
+}
+
+.detailed-description {
+  font-size: 1.5rem;
+}
+.detailed-author {
+  font-size: 1.2rem;
+}
+
+/* form */
+
+/* Add this CSS to your stylesheets or inline style */
+
+/* Container holding the form */
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form h1 {
+  text-align: center;
+}
+
+.signup-form form {
+}
+
+.signup-form input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.signup-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+  .signup-form {
+    max-width: 100%;
+  }
+}
+
+.signup-login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signup-login-toggle {
+  cursor: pointer;
+}
